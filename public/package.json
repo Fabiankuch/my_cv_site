@@ -1,0 +1,14 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "node js stuff",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch scss -o css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "karma": "^6.1.0"
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7fef8bc2-33ad-4f27-a6ae-43bfd8209dcf" name="smarticles_server" url="http://168.119.60.240">
+        <fileTransfer host="168.119.60.240" port="22" rootFolder="/var/www/html/fabian" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

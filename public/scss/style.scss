@@ -1,0 +1,382 @@
+$blue: #1FACEC;
+$red: #F31D30;
+$purple: #2E3192;
+
+.container {
+  height: 10000px;
+}
+.wrapper {
+  position: fixed;
+}
+
+.circle {
+  position: absolute;
+  top: 50px;
+  z-index: 0;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  opacity: .65;
+  mix-blend-mode: multiply;
+
+
+  &.right {
+    left: calc(50.5vw - 100px);
+    background-color: #F31D30;
+    background-blend-mode: multiply;
+  }
+  &.middle {
+    left: calc(50vw - 100px);
+    background-color: #5c60ce;
+    background-blend-mode: multiply;
+  }
+
+  &.left {
+    left: calc(49.5vw - 100px);
+    background-color: #1FACEC;
+    background-blend-mode: multiply;
+  }
+}
+
+.header-main-div {
+  height: 80px;
+  background-color: white ;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  top: 0px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+}
+.homepage-h1{
+  font-size: 1.3em;
+  color:#7b88a8;
+}
+.header-main-div a {
+  color: gray;
+  font-size: 2em;
+}
+.header-main-div a:hover {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.button-standard {
+  background-color: #47467a; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.div_block_blue{
+  height: 700px;
+  background-color: aliceblue;
+
+}
+.div_block_white{
+  height: 700px;
+  background-color: white;
+}
+.div_block_purple{
+  height: 700px;
+  background-color: #583bb6;
+}
+.div_block_purple h1 {
+  color:white;
+}
+.div_block_purple p {
+  color:white;
+}
+.div_block_blue p {
+  margin-top:0px;
+}
+.div_block_white p {
+  margin-top:0px;
+}
+
+.main_name_title {
+  font-size: 4rem;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.horizontal-center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* ============================================================================================================== */
+
+
+body {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0px;
+}
+.wrapper {
+  width: 100% ;
+  margin: 0 auto;
+}
+
+
+.container {
+  max-width: 960px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 30px 0 30px 0;
+}
+.container a {
+  color: #454545;
+}
+.container table {
+  font-size: 11px;
+  margin-top: 20px;
+}
+.container table thead td {
+  background-color: #f5f5f5;
+  padding: 4px 10px;
+}
+.container table tbody td {
+  padding: 4px 10px;
+}
+.container .box {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 30px;
+}
+.container input {
+  background-color: #f5f5f5;
+  border: 0;
+  padding: 5px 10px;
+}
+.container input[type="submit"] {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.container input[type="submit"]:hover {
+  background-color: #222;
+  color: #fff;
+}
+.container button {
+  background-color: #ccc;
+  border: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.container button:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+
+
+/* navigation dropdown menu */
+.navigation, .navigation-submenu {
+  display: inline-block;
+  list-style: none;
+  /* btw this is necessary to remove most browsers's "hidden" default <ul> intent */
+  margin: 0;
+  padding: 0;
+}
+/* TODO */
+.navigation {
+}
+.navigation.right {
+  float: right;
+}
+.navigation li {
+  float: left;
+  margin-right: 5px;
+}
+.navigation .navigation-submenu {
+  display: none;
+}
+.navigation li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 2px solid #454545;
+  background: #454545;
+  color: #fff;
+  float:none;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navigation li:hover .navigation-submenu {
+  display: block;
+  position: absolute;
+  float: left;
+}
+.navigation li:hover li,
+.navigation li:hover a {
+  float: none;
+}
+.navigation li a:hover,
+.navigation li:hover li a:hover {
+  background: #fff;
+  color: #454545;
+}
+
+.navigation > li.active a {
+  background: #fff;
+  color: #454545;
+}
+.navigation > li.active li a {
+  background: #454545;
+  color: #fff;
+}
+
+/* overview */
+.overview-table img {
+  width: 40px;
+  height: 40px;
+}
+
+/* feedback boxes */
+.feedback {
+  padding: 30px;
+  margin-bottom: 10px;
+}
+.feedback.success {
+  color: #558f2d;
+  background-color: #ddf2c0;
+}
+.feedback.error {
+  color: #ff7272;
+  background-color: #ffe5e5;
+}
+.feedback.info {
+  color: #00529B;
+  background-color: #BDE5F8;
+}
+
+.header_right_box {
+  float: right;
+}
+
+/* login screen */
+.login-page-box {
+  display: table;
+  width: 100%;
+}
+.login-page-box .table-wrapper {
+  display: table-row;
+}
+
+.login-box {
+  display: table-cell;
+  margin: 0;
+  color: #777;
+  background-color: #f4f3f1;
+  padding: 20px 50px 45px 50px;
+  width: 49%;
+  box-sizing: border-box;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.login-box h2 {
+  color: #252525;
+}
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  font-family: Arial, sans-serif;
+  color: #252525;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box; /* modern way to say width:100% without padding */
+  /*text-transform: uppercase;*/
+}
+.login-box input[type="submit"] {
+  color: #777;
+  background-color: transparent;
+  border: 2px solid #777;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box; /* modern way to say width:100% without padding */
+  text-transform: uppercase;
+}
+.login-box input[type="submit"]:hover {
+  color: #fff;
+  border-color: #252525;
+  background-color: #252525;
+}
+.login-box .remember-me-label {
+  display: block;
+  margin-bottom: 10px;
+}
+.login-box .link-forgot-my-password {
+  display: block;
+  text-align: right;
+}
+.login-box .link-forgot-my-password a {
+  color: #777;
+  text-decoration: none;
+}
+.login-box .link-forgot-my-password a:hover {
+  text-decoration: underline;
+}
+.login-box ::-webkit-input-placeholder { color: #777; opacity: 0.5; }
+.login-box ::-moz-placeholder { color: #777; opacity: 0.5; }
+.login-box :-ms-input-placeholder { color: #777; opacity: 0.5; }
+.login-box input:-moz-placeholder { color: #777; opacity: 0.5; }
+
+.register-box {
+  display: table-cell;
+  color: #fff;
+  background-color: #252525;
+  padding: 20px 50px 45px 50px;
+  width: 49%;
+  box-sizing: border-box;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+}
+.register-box h2 {
+  color: #fff;
+}
+.register-box a {
+  width: 100%;
+  display: block;
+  box-sizing: border-box; /* modern way to say width:100% without padding */
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+.register-box a:hover {
+  background-color: #ffffff;
+  color: #252525;
+}
+
+/* error page */
+.red-text {
+  color: red;
+}
+
+
