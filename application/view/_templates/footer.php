@@ -1,19 +1,27 @@
         <div class="footer"></div>
+
     </div><!-- close class="wrapper" -->
-        <div class="row">
-            <div class="col div_block_white" style="height:400px;">
-                <div class="horizontal-center" style="top: 140px;">
-                    <h1 style="color:#583bb6; font-size: 3.5em">Let's Talk</h1><br>
+        <div class="container-fluid desktop">
+            <div class="row div_block_lightblue">
+                <div class="col div_block_lightblue" style="" >
+                    <div class="horizontal-center" style="top: 55px;">
+                        <h1 class="homepage-h1" style="font-size: 3.5em; color:white">Let's Talk</h1><br>
+                    </div>
                 </div>
-            </div>
-            <div class="col div_block_white" style="height:40px;">
-                <div class="vertical-center" style="width:500px; top:220px">
-                    <h2 class="homepage-h1" style="font-size:2.5em">Email:</h2><br>
-                    <p style="color:#7b88a8; font-size:2em">fabiankuchling@gmail.com</p>
+                <div class="col div_block_lightblue" style="">
+                    <div class="vertical-center" style="width:500px;">
+                        <h2 class="homepage-h1" style="font-size:2em; color:white">Email:</h2><br>
+                        <p style="color:white; font-size:1.5em">fabiankuchling@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col div_block_lightblue" style="">
+                    <div class="vertical-center" style="width:500px;">
+                        <h2 class="homepage-h1" style="font-size:2em; color:white">GitHub:</h2><br>
+                        <p style="color:white; font-size:1.5em">https://github.com/Fabiankuch/my_cv_site</p>
+                    </div>
                 </div>
             </div>
         </div>
-
 
 
 
